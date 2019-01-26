@@ -23,4 +23,5 @@
   - 2x Servo Micro Motor
   - 8x αντιστάσεις 220Ω
   - 2x αντιστάσεις 3ΚΩ
+  - 1x breadboard
 
