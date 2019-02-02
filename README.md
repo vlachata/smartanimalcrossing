@@ -17,3 +17,9 @@
 Αναλυτικά τα υλικά που χρειάζονται για την κατασκευή θα τα βρείτε στον παρακάτω σύνδεσμο
 
 [Υλικά - Εξοπλισμός](https://github.com/vlachata/smartanimalcrossing/blob/master/components.md)
+
+### Συνδεσμολογία :
+
+Αναλυτικά τη συνδεσμολογία που χρειάζονται για την κατασκευή θα τα βρείτε στον παρακάτω σύνδεσμο
+
+[Συνδεσμολογία](https://github.com/vlachata/smartanimalcrossing/blob/master/Connections.md)
