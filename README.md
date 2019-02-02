@@ -22,4 +22,4 @@
 
 Αναλυτικά τη συνδεσμολογία που χρειάζονται για την κατασκευή θα τα βρείτε στον παρακάτω σύνδεσμο
 
-[Συνδεσμολογία](https://github.com/vlachata/smartanimalcrossing/blob/master/Connections.md)
+[Συνδεσμολογία Εξοπλισμού](https://github.com/vlachata/smartanimalcrossing/blob/master/Connections.md)
