@@ -22,7 +22,7 @@
 
 Αναλυτικές οδηγίες για το απαραίτητο λογισμικο παραγωγής του κώδικα και της εγγραφής του στο Arduino UNO θα βρείτε  στον παρακάτω σύνδεσμο:
 
-[Λογισμικο Οδηγίες](https://github.com/vlachata/smartanimalcrossing/blob/master/Software.md)
+[Λογισμικό Οδηγίες](https://github.com/vlachata/smartanimalcrossing/blob/master/Software.md)
 
 ### Συνδεσμολογία Υλικού:
 
