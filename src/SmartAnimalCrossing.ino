@@ -3,30 +3,6 @@
 Servo i;
 Servo j;
 
-// Οι εντολές για διακοπή της κυκλοφοριας
-void goRed() {
-  // Red Led
-  digitalWrite(5, LOW);
-  // Orange Led
-  digitalWrite(6, HIGH);
-  // Green Led
-  digitalWrite(7, LOW);
-  delay(500);
-  // Red Led
-  digitalWrite(5, HIGH);
-  // Orange Led
-  digitalWrite(6, LOW);
-  // Green Led
-  digitalWrite(7, LOW);
-  i.write(1);
-  j.write(1);
-  while (!(analogRead(0) < 50 || analogRead(1) < 50)) {
-    delay(50);
-  }
-  goGreen();
-}
-
-
 // Οι εντολές για επανέναρξη της κυκλοφορίας
 void goGreen() {
   i.write(90);
@@ -37,6 +13,32 @@ void goGreen() {
   digitalWrite(6, LOW);
   // Green Led
   digitalWrite(7, HIGH);
+}
+
+
+// Οι εντολές για διακοπή της κυκλοφοριας
+void goRed() {
+  // Red Led
+  digitalWrite(5, LOW);
+  // Orange Led
+  digitalWrite(6, HIGH);
+  // Green Led
+  digitalWrite(7, LOW);
+  delay(2000);
+  // Red Led
+  digitalWrite(5, HIGH);
+  // Orange Led
+  digitalWrite(6, LOW);
+  // Green Led
+  digitalWrite(7, LOW);
+  i.write(1);
+  j.write(1);
+  delay(500);
+  while (analogRead(0) < 1015 && analogRead(1) < 1015) {
+    delay(50);
+  }
+  delay(1500);
+  goGreen();
 }
 
 
@@ -59,9 +61,12 @@ void setup() {
 }
 
 void loop() {
-    if (analogRead(0) > 50 || analogRead(1) > 50) {
+    if (analogRead(0) > 1015 || analogRead(1) > 1015) {
       goRed();
 
     }
+    delay(60);
 
 }
+
+

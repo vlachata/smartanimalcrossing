@@ -1,136 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <toolboxcategories>CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO,CAT_ARDUINO_SERVO</toolboxcategories>
   <toolbox>toolbox_arduino_all</toolbox>
-  <block type="procedures_defnoreturn" id="0u|06j!Mn{/Y:(+CD6Zp" inline="true" x="413" y="13">
-    <field name="NAME">goRed</field>
-    <comment pinned="false" h="80" w="160">Οι εντολές για διακοπή της κυκλοφοριας</comment>
-    <statement name="STACK">
-      <block type="inout_digital_write_validator" id="8a3V?B,OkE@0rPwBJe;b">
-        <field name="PIN">5</field>
-        <field name="STAT">LOW</field>
-        <comment pinned="false" h="80" w="160">Red Led</comment>
-        <next>
-          <block type="inout_digital_write_validator" id="seXjmc0*7)a_k_#U!1f;">
-            <field name="PIN">6</field>
-            <field name="STAT">HIGH</field>
-            <comment pinned="false" h="80" w="160">Orange Led</comment>
-            <next>
-              <block type="inout_digital_write_validator" id="OXllOu@dat|7e6HV=3fa">
-                <field name="PIN">7</field>
-                <field name="STAT">LOW</field>
-                <comment pinned="false" h="80" w="160">Green Led</comment>
-                <next>
-                  <block type="base_delay_sec" id="Y0%J7{wSGTQGeoRNng:C">
-                    <value name="DELAY_TIME">
-                      <shadow type="math_number" id="-mZA;;)iV)59PMY*(?dP">
-                        <field name="NUM">0.5</field>
-                      </shadow>
-                    </value>
-                    <next>
-                      <block type="inout_digital_write_validator" id="0lawpLXtP|f|VHq_Sac!">
-                        <field name="PIN">5</field>
-                        <field name="STAT">HIGH</field>
-                        <comment pinned="false" h="80" w="160">Red Led</comment>
-                        <next>
-                          <block type="inout_digital_write_validator" id="t5bFQX5gGW@)0*ACwQ}1">
-                            <field name="PIN">6</field>
-                            <field name="STAT">LOW</field>
-                            <comment pinned="false" h="80" w="160">Orange Led</comment>
-                            <next>
-                              <block type="inout_digital_write_validator" id="k6*z8jP_qcGqY$2LzpAZ">
-                                <field name="PIN">7</field>
-                                <field name="STAT">LOW</field>
-                                <comment pinned="false" h="80" w="160">Green Led</comment>
-                                <next>
-                                  <block type="servo_move" id="U`(/4!@]U80x.MLAPB]r" inline="true">
-                                    <field name="SERVO_NAME">i</field>
-                                    <value name="DEGREE">
-                                      <shadow type="inout_angle" id="50qMS]ngpqC~Sc-G+jE8">
-                                        <field name="ANGLE">1</field>
-                                      </shadow>
-                                    </value>
-                                    <next>
-                                      <block type="servo_move" id="?=d*=l:,ADrEu_|.2UIB" inline="true">
-                                        <field name="SERVO_NAME">j</field>
-                                        <value name="DEGREE">
-                                          <shadow type="inout_angle" id="a6VQ[CW:tb2m9^$+rZ=e">
-                                            <field name="ANGLE">1</field>
-                                          </shadow>
-                                        </value>
-                                        <next>
-                                          <block type="controls_whileUntil" id="f^I/lw3sR[62v~v:IpH?" inline="true">
-                                            <field name="MODE">UNTIL</field>
-                                            <value name="BOOL">
-                                              <block type="logic_operation" id="7ElWqS_fERG@zAC{3MTF">
-                                                <field name="OP">OR</field>
-                                                <value name="A">
-                                                  <block type="logic_compare" id=")`JgC]yp)E|Ff1%lZzGa">
-                                                    <field name="OP">LT</field>
-                                                    <value name="A">
-                                                      <block type="inout_analog_read_validator" id="?jp$qLfW*U).,Ot4S2a$" inline="true">
-                                                        <field name="PIN">A0</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="B">
-                                                      <block type="math_number" id="J6^z2hvL[%}*VNDrYK0[" inline="true">
-                                                        <field name="NUM">50</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="B">
-                                                  <block type="logic_compare" id="b.COj~.-,+wu42lMncZD">
-                                                    <field name="OP">LT</field>
-                                                    <value name="A">
-                                                      <block type="inout_analog_read_validator" id=";c/4c4{7$mkzc}Yj]6@U" inline="true">
-                                                        <field name="PIN">A1</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="B">
-                                                      <block type="math_number" id="}jr2T,-~K#8OR;Y(4J;L" inline="true">
-                                                        <field name="NUM">50</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <statement name="DO">
-                                              <block type="base_delay" id="#.[$2e{Qg7FMSCw-cszn">
-                                                <value name="DELAY_TIME">
-                                                  <shadow type="math_number" id="W+mnfk$curE*_sqJk3_S">
-                                                    <field name="NUM">50</field>
-                                                  </shadow>
-                                                </value>
-                                              </block>
-                                            </statement>
-                                            <next>
-                                              <block type="procedures_callnoreturn" id="9dNyY3.}h},]i`f]R8l," inline="true">
-                                                <mutation name="goGreen"></mutation>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </statement>
-  </block>
-  <block type="procedures_defnoreturn" id="e,!MeYq$~Wxw[$9}qS8U" inline="true" x="938" y="13">
+  <block type="procedures_defnoreturn" id="e,!MeYq$~Wxw[$9}qS8U" inline="true" x="1012" y="-112">
     <field name="NAME">goGreen</field>
     <comment pinned="false" h="80" w="160">Οι εντολές για επανέναρξη της κυκλοφορίας</comment>
     <statement name="STACK">
@@ -175,7 +46,154 @@
       </block>
     </statement>
   </block>
-  <block type="base_setup_loop" id=",;r@v,FU9R0@1Bm6B[N0" inline="true" x="13" y="388">
+  <block type="procedures_defnoreturn" id="0u|06j!Mn{/Y:(+CD6Zp" inline="true" x="412" y="-62">
+    <field name="NAME">goRed</field>
+    <comment pinned="false" h="80" w="160">Οι εντολές για διακοπή της κυκλοφοριας</comment>
+    <statement name="STACK">
+      <block type="inout_digital_write_validator" id="8a3V?B,OkE@0rPwBJe;b">
+        <field name="PIN">5</field>
+        <field name="STAT">LOW</field>
+        <comment pinned="false" h="80" w="160">Red Led</comment>
+        <next>
+          <block type="inout_digital_write_validator" id="seXjmc0*7)a_k_#U!1f;">
+            <field name="PIN">6</field>
+            <field name="STAT">HIGH</field>
+            <comment pinned="false" h="80" w="160">Orange Led</comment>
+            <next>
+              <block type="inout_digital_write_validator" id="OXllOu@dat|7e6HV=3fa">
+                <field name="PIN">7</field>
+                <field name="STAT">LOW</field>
+                <comment pinned="false" h="80" w="160">Green Led</comment>
+                <next>
+                  <block type="base_delay_sec" id="Y0%J7{wSGTQGeoRNng:C">
+                    <value name="DELAY_TIME">
+                      <shadow type="math_number" id="-mZA;;)iV)59PMY*(?dP">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="inout_digital_write_validator" id="0lawpLXtP|f|VHq_Sac!">
+                        <field name="PIN">5</field>
+                        <field name="STAT">HIGH</field>
+                        <comment pinned="false" h="80" w="160">Red Led</comment>
+                        <next>
+                          <block type="inout_digital_write_validator" id="t5bFQX5gGW@)0*ACwQ}1">
+                            <field name="PIN">6</field>
+                            <field name="STAT">LOW</field>
+                            <comment pinned="false" h="80" w="160">Orange Led</comment>
+                            <next>
+                              <block type="inout_digital_write_validator" id="k6*z8jP_qcGqY$2LzpAZ">
+                                <field name="PIN">7</field>
+                                <field name="STAT">LOW</field>
+                                <comment pinned="false" h="80" w="160">Green Led</comment>
+                                <next>
+                                  <block type="servo_move" id="U`(/4!@]U80x.MLAPB]r" inline="true">
+                                    <field name="SERVO_NAME">i</field>
+                                    <value name="DEGREE">
+                                      <shadow type="inout_angle" id="50qMS]ngpqC~Sc-G+jE8">
+                                        <field name="ANGLE">1</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="servo_move" id="?=d*=l:,ADrEu_|.2UIB" inline="true">
+                                        <field name="SERVO_NAME">j</field>
+                                        <value name="DEGREE">
+                                          <shadow type="inout_angle" id="a6VQ[CW:tb2m9^$+rZ=e">
+                                            <field name="ANGLE">1</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="base_delay_sec" id=".axZn~285cawQ9ZEavxC">
+                                            <value name="DELAY_TIME">
+                                              <shadow type="math_number" id="R-?V_x-:B_4jbo-0D!]J">
+                                                <field name="NUM">0.5</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="controls_whileUntil" id="f^I/lw3sR[62v~v:IpH?" inline="true">
+                                                <field name="MODE">WHILE</field>
+                                                <value name="BOOL">
+                                                  <block type="logic_operation" id="7ElWqS_fERG@zAC{3MTF">
+                                                    <field name="OP">AND</field>
+                                                    <value name="A">
+                                                      <block type="logic_compare" id=")`JgC]yp)E|Ff1%lZzGa">
+                                                        <field name="OP">LT</field>
+                                                        <value name="A">
+                                                          <block type="inout_analog_read_validator" id="?jp$qLfW*U).,Ot4S2a$" inline="true">
+                                                            <field name="PIN">A0</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="J6^z2hvL[%}*VNDrYK0[" inline="true">
+                                                            <field name="NUM">1015</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="logic_compare" id="b.COj~.-,+wu42lMncZD">
+                                                        <field name="OP">LT</field>
+                                                        <value name="A">
+                                                          <block type="inout_analog_read_validator" id=";c/4c4{7$mkzc}Yj]6@U" inline="true">
+                                                            <field name="PIN">A1</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="}jr2T,-~K#8OR;Y(4J;L" inline="true">
+                                                            <field name="NUM">1015</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO">
+                                                  <block type="base_delay" id="#.[$2e{Qg7FMSCw-cszn">
+                                                    <value name="DELAY_TIME">
+                                                      <shadow type="math_number" id="W+mnfk$curE*_sqJk3_S">
+                                                        <field name="NUM">50</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="base_delay_sec" id="H+}R@V`g_P@1zy`jb2sr">
+                                                    <value name="DELAY_TIME">
+                                                      <shadow type="math_number" id="pIfO}$5~v3u.[h|s649(">
+                                                        <field name="NUM">1.5</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="procedures_callnoreturn" id="9dNyY3.}h},]i`f]R8l," inline="true">
+                                                        <mutation name="goGreen"></mutation>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="base_setup_loop" id=",;r@v,FU9R0@1Bm6B[N0" inline="true" x="-213" y="187">
     <statement name="DO">
       <block type="servo_attach" id="3qT]b|w!%II=cs`!Ze+j" inline="true">
         <field name="SERVO_NAME">i</field>
@@ -252,7 +270,7 @@
                 </value>
                 <value name="B">
                   <block type="math_number" id="2R!G*+$zNMhL-Y^kl?EC" inline="true">
-                    <field name="NUM">50</field>
+                    <field name="NUM">1015</field>
                   </block>
                 </value>
               </block>
@@ -267,7 +285,7 @@
                 </value>
                 <value name="B">
                   <block type="math_number" id="G}5W9q|ow5C4y%;W=7_5" inline="true">
-                    <field name="NUM">50</field>
+                    <field name="NUM">1015</field>
                   </block>
                 </value>
               </block>
@@ -279,6 +297,15 @@
             <mutation name="goRed"></mutation>
           </block>
         </statement>
+        <next>
+          <block type="base_delay" id="ppHNrGXX/Wr@|s_TFNpV">
+            <value name="DELAY_TIME">
+              <shadow type="math_number" id="Z5!_3unb|~9Gl8iw6T@X">
+                <field name="NUM">60</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
