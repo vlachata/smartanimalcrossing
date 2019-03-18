@@ -5,8 +5,9 @@ Servo j;
 
 // Οι εντολές για επανέναρξη της κυκλοφορίας
 void goGreen() {
-  i.write(90);
-  j.write(90);
+  i.write(3);
+  delay(200);
+  j.write(3);
   // Red Led
   digitalWrite(5, LOW);
   // Orange Led
@@ -31,8 +32,10 @@ void goRed() {
   digitalWrite(6, LOW);
   // Green Led
   digitalWrite(7, LOW);
-  i.write(1);
-  j.write(1);
+  delay(500);
+  i.write(90);
+  delay(200);
+  j.write(90);
   delay(500);
   while (analogRead(0) < 1015 && analogRead(1) < 1015) {
     delay(50);
@@ -49,8 +52,9 @@ void setup() {
   pinMode(7, OUTPUT);
   i.attach(8);
   j.attach(9);
-    i.write(90);
-  j.write(90);
+    i.write(3);
+  delay(200);
+  j.write(3);
   // Red Led
   digitalWrite(5, LOW);
   // Orange Led
@@ -68,5 +72,3 @@ void loop() {
     delay(60);
 
 }
-
-
