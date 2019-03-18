@@ -2,11 +2,11 @@
 
 Για τη δημιουργία του κώδικα και του «ανεβάσματος» του στο Arduino χρησιμοποιήσαμε τα παρακάτω προγράμματα:
 
-[Blockly@rduino](https://technologiescollege.github.io/Blockly-at-rduino/)
+1)  [Blockly@rduino](https://technologiescollege.github.io/Blockly-at-rduino/)
 
 ![Blockly@rduino](https://raw.githubusercontent.com/vlachata/smartanimalcrossing/master/files/blockly@rduino.png)
 
-[Arduino IDE](https://www.arduino.cc/en/main/software)
+2)  [Arduino IDE](https://www.arduino.cc/en/main/software)
 
 ![Arduino IDE](https://raw.githubusercontent.com/vlachata/smartanimalcrossing/master/files/arduinoIDE.png)
 
