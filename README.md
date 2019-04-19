@@ -18,14 +18,14 @@
 
 [Υλικά - Εξοπλισμός](https://github.com/vlachata/smartanimalcrossing/blob/master/Components.md)
 
-### Λογισμικό
-
-Αναλυτικές οδηγίες για το απαραίτητο λογισμικο παραγωγής του κώδικα και της εγγραφής του στο Arduino UNO θα βρείτε  στον παρακάτω σύνδεσμο:
-
-[Λογισμικό Οδηγίες](https://github.com/vlachata/smartanimalcrossing/blob/master/Software.md)
-
-### Συνδεσμολογία Υλικού:
-
 Αναλυτικά τη συνδεσμολογία που χρειάζεται για την κατασκευή θα τα βρείτε στον παρακάτω σύνδεσμο:
 
 [Συνδεσμολογία Υλικού](https://github.com/vlachata/smartanimalcrossing/blob/master/Connections.md)
+
+### Λογισμικό
+
+Αναλυτικές οδηγίες για το απαραίτητο λογισμικο παραγωγής του κώδικα και της εγγραφής του στο Arduino UNO θα βρείτε στον παρακάτω σύνδεσμο:
+
+[Λογισμικό Οδηγίες](https://github.com/vlachata/smartanimalcrossing/blob/master/Software.md)
+
+
