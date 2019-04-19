@@ -5,3 +5,5 @@
 Στο παρακάτω σχήμα παρουσιάζεται η συνδεσμολογία αναλυτικά.
 
 ![connections](https://raw.githubusercontent.com/vlachata/smartanimalcrossing/master/files/Connections.jpg)
+
+To αρχείο σχεδίασης θα το βρείτε στον φάκελο files του αποθετηρίου ![schematic.fzz](https://github.com/vlachata/smartanimalcrossing/blob/master/files/schematic%20design.fzz)
